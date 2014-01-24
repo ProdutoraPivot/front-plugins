@@ -95,6 +95,8 @@
         var Soma, Resto, i;
         Soma = 0;
 
+        cpf = cpf.replace(/[^\d]/g,"");
+
         if (/(.)\1{10}/.test(cpf)) {
             return false;
         }
